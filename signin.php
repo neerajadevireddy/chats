@@ -18,7 +18,7 @@ if(!isset($conn)){
                     $_SESSION['PHONE']= $row['phone'];
                     header("location:http://localhost/chat/chats.php");
                 }else{
-                    echo "please enter the crct password";
+                    echo "please enter the crct password ";
                 } 
             }else{
                 echo mysqli_error($conn);
