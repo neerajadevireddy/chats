@@ -16,7 +16,7 @@ if(!isset($conn)){
                     $_SESSION['USER'] = $row['username'];
                     $_SESSION['USERID']= $row['userid'];
                     $_SESSION['PHONE']= $row['phone'];
-                    header("location:http://localhost/chats/chats.php");
+                    header("location:http://localhost/chats/index.php");
                 }else{
                     echo "please enter the crct password ";
                 } 
@@ -53,9 +53,7 @@ if(!isset($conn)){
 <form class="form" method="post">
 <h1 class="form-title">Welcome  to <span style="color:rgb(163, 82, 238)">Neeranth</span></h1>   
   <input type="text" id="username" name="username" placeholder="Enter Username"><br>
-  <input type="
-  
-  " id="password" name="password" placeholder="Enter Password"><br>
+  <input type="password" id="password" name="password" placeholder="Enter Password"><br>
   <button class="btn btn-primary" type="submit" name="submit">Submit</button>
   <br>
   <a href="signup.php"> signup</a>

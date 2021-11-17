@@ -30,9 +30,10 @@ if($_SESSION['USER']){
             <title>Document</title>
         </head>
         <body class="main">
+            <a href="http://localhost/chats/index.php" class="btn btn-primary" style="position: absolute;top:10px;left:10px">Back</a>
             <div class="chatbox">
                
-                <div class="msgs" id="msgs">
+                <div id="msgs">
 
                 </div>
                 <form class="input" id="messageForm">
@@ -82,7 +83,7 @@ if($_SESSION['USER']){
         </html>
         <?php
     }else{
-        header('Location:http://localhost/chats/chats.php');    
+        header('Location:http://localhost/chats/index.php');    
     }
 }else{
     header('Location:http://localhost/chats/signin.php');

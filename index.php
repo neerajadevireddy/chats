@@ -27,7 +27,10 @@
     </head>
     <body>
         <div class="container-sm">
-            <a  href="./logout.php" class="btn btn-dabger">logout</a>
+            <div style="display:flex;justify-content:space-between">
+            <p style="padding-left:10px;padding-top:10px;font-size:2.4rem">Hello <span style="color:rgb(163, 82, 238)"><?=$_SESSION['USER']?>!</span></p>
+            <a  href="./logout.php" class="btn btn-dabger" style="padding-right:10px;padding-top:10px;font-size:2rem">logout</a>
+        </div>
             <div>
                 <h3 class="text-center">Friends</h3>
                 <div class="chats">
