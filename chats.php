@@ -27,16 +27,17 @@
     </head>
     <body>
         <div class="container-sm">
+            <a  href="./logout.php" class="btn btn-dabger">logout</a>
             <div>
                 <h3 class="text-center">Friends</h3>
                 <div class="chats">
                     <?php 
                         while($row = mysqli_fetch_assoc($res)){
                     ?>
-                        <div class="chat">
+                        <a class="chat" href="messages.php?toUserId=<?php echo $row['userid']?>&toUser=<?php echo $row['username']?>">
                             <div class="profile"></div>
                             <p><?php echo $row['username'] ?></p>
-                        </div>
+                        </a>
                         <?php 
                             }
                         ?>
@@ -47,6 +48,6 @@
     </html>
     <?php
     }else{
-        header("location:http://localhost/chat/signin.php");
+        header("location:http://localhost/chats/signin.php");
     }
 ?>

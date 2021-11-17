@@ -13,7 +13,7 @@ if(!isset($conn)){
     $hashpassword = password_hash($password,PASSWORD_DEFAULT);
      $sql = "INSERT INTO users (username,phone,password) VALUES ('$username','$phone','$hashpassword')";
      if(mysqli_query($conn,$sql)){
-         header("location:http://localhost/chat/signin.php");
+         header("location:http://localhost/chats/signin.php");
      }else{
          echo mysqli_error($conn);
      }

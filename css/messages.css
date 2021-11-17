@@ -1,0 +1,29 @@
+.main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chatbox {
+  position: relative;
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.msgs {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  overflow: auto;
+}

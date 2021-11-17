@@ -16,7 +16,7 @@ if(!isset($conn)){
                     $_SESSION['USER'] = $row['username'];
                     $_SESSION['USERID']= $row['userid'];
                     $_SESSION['PHONE']= $row['phone'];
-                    header("location:http://localhost/chat/chats.php");
+                    header("location:http://localhost/chats/chats.php");
                 }else{
                     echo "please enter the crct password ";
                 } 
